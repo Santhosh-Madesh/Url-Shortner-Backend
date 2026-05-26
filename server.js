@@ -6,7 +6,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "https://replit.com/@santoshmadesh05/Playful-Website-Builder",
+        origin: "https://playful-website-builder--santoshmadesh05.replit.app/",
         methods: ["GET","POST","PUT", "DELETE"],
         credentials:true
     })
