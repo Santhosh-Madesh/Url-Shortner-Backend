@@ -1,7 +1,16 @@
 const express = require("express");
+const cors = require("cors");
 
 // Express app entity
 const app = express();
+
+app.use(
+    cors({
+        origin: "https://replit.com/@santoshmadesh05/Playful-Website-Builder",
+        methods: ["GET","POST","PUT", "DELETE"],
+        credentials:true
+    })
+)
 
 // Loads .env files into process.env 
 require("dotenv").config();
