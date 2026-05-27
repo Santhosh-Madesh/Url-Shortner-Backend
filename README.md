@@ -4,8 +4,6 @@
 
 This repository is an Express + MongoDB backend for a URL shortening service. It provides a simple REST API to create, resolve, update, delete, and inspect short URLs.
 
-The backend is intentionally self-contained and exposes a clear contract for frontend developers. You should not need to contact the backend developer for normal integration details.
-
 ## Technology Stack
 
 - Node.js (CommonJS)
