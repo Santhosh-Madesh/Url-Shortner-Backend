@@ -31,9 +31,13 @@ const createShortUrl = async(req, res, next)=>{
         }
 
         let shortUrl;
-        let flag = true;
+        let attempt = 0;
 
-        while(flag){
+        while(attempt <= 5){
+
+            if(attempt === 5){
+                return next(createError(500, "Attempt to produce the short url timed out, please try again"));
+            }
 
             shortUrl = generateShortUrl(5);
 
